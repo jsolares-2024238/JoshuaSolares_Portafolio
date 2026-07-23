@@ -1,12 +1,25 @@
-document.addEventListener("DOMContentLoaded", () => {
+let barChart = null;
+let donutCharts = [];
+
+function readChartColors() {
+  const styles = getComputedStyle(document.body);
+  return {
+    text: styles.getPropertyValue("--color-text").trim(),
+    muted: styles.getPropertyValue("--color-text-muted").trim(),
+    border: styles.getPropertyValue("--color-border").trim(),
+    accent: styles.getPropertyValue("--color-accent").trim(),
+  };
+}
+
+function buildCharts() {
   if (typeof Chart === "undefined") return;
 
-  const styles = getComputedStyle(document.body);
-  const colorText = styles.getPropertyValue("--color-text").trim();
-  const colorMuted = styles.getPropertyValue("--color-text-muted").trim();
-  const colorBorder = styles.getPropertyValue("--color-border").trim();
-  const colorPrimary = styles.getPropertyValue("--color-primary").trim();
-  const colorAccent = styles.getPropertyValue("--color-accent").trim();
+  const colors = readChartColors();
+  Chart.defaults.font.family = "'Inter', system-ui, sans-serif";
+
+  if (barChart) barChart.destroy();
+  donutCharts.forEach((chart) => chart.destroy());
+  donutCharts = [];
 
   const centerTextPlugin = {
     id: "centerText",
@@ -18,8 +31,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const y = (chartArea.top + chartArea.bottom) / 2;
 
       ctx.save();
-      ctx.font = "700 16px Segoe UI, sans-serif";
-      ctx.fillStyle = colorText;
+      ctx.font = "600 15px 'JetBrains Mono', monospace";
+      ctx.fillStyle = colors.text;
       ctx.textAlign = "center";
       ctx.textBaseline = "middle";
       ctx.fillText(`${percent}%`, x, y);
@@ -32,16 +45,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const labels = barCanvas.dataset.labels.split(",");
     const values = barCanvas.dataset.values.split(",").map(Number);
 
-    new Chart(barCanvas, {
+    barChart = new Chart(barCanvas, {
       type: "bar",
       data: {
         labels,
         datasets: [
           {
             data: values,
-            backgroundColor: colorPrimary,
-            borderRadius: 6,
-            barThickness: 22,
+            backgroundColor: colors.accent,
+            borderRadius: 4,
+            barThickness: 20,
           },
         ],
       },
@@ -59,11 +72,11 @@ document.addEventListener("DOMContentLoaded", () => {
           x: {
             min: 0,
             max: 100,
-            ticks: { color: colorMuted, callback: (v) => `${v}%` },
-            grid: { color: colorBorder },
+            ticks: { color: colors.muted, callback: (v) => `${v}%` },
+            grid: { color: colors.border },
           },
           y: {
-            ticks: { color: colorText },
+            ticks: { color: colors.text },
             grid: { display: false },
           },
         },
@@ -74,13 +87,13 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".skill-donut").forEach((canvas) => {
     const percent = Number(canvas.dataset.percent);
 
-    new Chart(canvas, {
+    const chart = new Chart(canvas, {
       type: "doughnut",
       data: {
         datasets: [
           {
             data: [percent, 100 - percent],
-            backgroundColor: [colorAccent, colorBorder],
+            backgroundColor: [colors.accent, colors.border],
             borderWidth: 0,
           },
         ],
@@ -96,5 +109,10 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       plugins: [centerTextPlugin],
     });
+
+    donutCharts.push(chart);
   });
-});
+}
+
+document.addEventListener("DOMContentLoaded", buildCharts);
+document.addEventListener("themechange", buildCharts);

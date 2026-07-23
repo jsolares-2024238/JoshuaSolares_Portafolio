@@ -5,26 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Currículum | Portafolio de Desarrollador</title>
   <meta name="description" content="Educación y experiencia del desarrollador." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
+  <script>
+    (function () {
+      var stored = localStorage.getItem("theme");
+      var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.setAttribute("data-theme", stored || (prefersDark ? "dark" : "light"));
+    })();
+  </script>
 </head>
 <body>
+
+  <div class="topline"></div>
 
   <header class="navbar">
     <div class="navbar__inner">
       <a href="index.html" class="navbar__brand">Tu Nombre<span>.</span></a>
-      <button class="navbar__toggle" aria-label="Abrir menú">
-        <span></span><span></span><span></span>
-      </button>
-      <nav>
-        <ul class="navbar__links">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="sobre-mi.html">Sobre mí</a></li>
-          <li><a href="habilidades.html">Habilidades</a></li>
-          <li><a href="curriculum.html" aria-current="page">Currículum</a></li>
-          <li><a href="proyectos.html">Proyectos</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
+      <div class="navbar__nav">
+        <nav>
+          <ul class="navbar__links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobre-mi.html">Sobre mí</a></li>
+            <li><a href="habilidades.html">Habilidades</a></li>
+            <li><a href="curriculum.html" aria-current="page">Currículum</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar tema">
+          <span class="icon-sun">☀</span>
+          <span class="icon-moon">☾</span>
+        </button>
+        <button class="navbar__toggle" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -33,13 +51,15 @@
     <section class="section">
       <div class="container">
         <div class="section__header">
-          <span class="section__eyebrow">Currículum</span>
-          <h1 class="section__title">Educación</h1>
+          <span class="section__index">01</span>
+          <div>
+            <span class="section__eyebrow">Currículum</span>
+            <h1 class="section__title">Educación</h1>
+          </div>
         </div>
 
         <ol class="timeline">
           <li class="timeline__item">
-            <div class="timeline__dot"></div>
             <div class="timeline__content card">
               <span class="timeline__date">[EDITAR: año inicio] — Presente</span>
               <h3>[EDITAR: título de tu formación]</h3>
@@ -49,7 +69,6 @@
             </div>
           </li>
           <li class="timeline__item">
-            <div class="timeline__dot"></div>
             <div class="timeline__content card">
               <span class="timeline__date">[EDITAR: año]</span>
               <h3>[EDITAR: nombre del curso]</h3>
@@ -65,13 +84,15 @@
     <section class="section section--alt">
       <div class="container">
         <div class="section__header">
-          <span class="section__eyebrow">Currículum</span>
-          <h2 class="section__title">Experiencia</h2>
+          <span class="section__index">02</span>
+          <div>
+            <span class="section__eyebrow">Currículum</span>
+            <h2 class="section__title">Experiencia</h2>
+          </div>
         </div>
 
         <ol class="timeline">
           <li class="timeline__item">
-            <div class="timeline__dot"></div>
             <div class="timeline__content card">
               <span class="timeline__date">[EDITAR: año]</span>
               <h3>[EDITAR: nombre de la práctica/puesto]</h3>
@@ -81,7 +102,6 @@
             </div>
           </li>
           <li class="timeline__item">
-            <div class="timeline__dot"></div>
             <div class="timeline__content card">
               <span class="timeline__date">Próximamente</span>
               <h3>Prácticas profesionales</h3>
@@ -100,7 +120,7 @@
   </main>
 
   <footer class="footer">
-    <div class="container">
+    <div class="container footer__inner">
       <p>&copy; 2026 Tu Nombre. Todos los derechos reservados.</p>
       <div class="footer__socials">
         <a href="contacto.html">LinkedIn</a>
@@ -110,6 +130,7 @@
     </div>
   </footer>
 
+  <script src="assets/js/theme.js"></script>
   <script src="assets/js/script.js"></script>
 </body>
 </html>

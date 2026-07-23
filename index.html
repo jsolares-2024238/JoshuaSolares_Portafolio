@@ -5,35 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Inicio | Portafolio de Desarrollador</title>
   <meta name="description" content="Portafolio de desarrollador — bienvenida." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
+  <script>
+    (function () {
+      var stored = localStorage.getItem("theme");
+      var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.setAttribute("data-theme", stored || (prefersDark ? "dark" : "light"));
+    })();
+  </script>
 </head>
 <body>
+
+  <div class="topline"></div>
 
   <header class="navbar">
     <div class="navbar__inner">
       <a href="index.html" class="navbar__brand">Tu Nombre<span>.</span></a>
-      <button class="navbar__toggle" aria-label="Abrir menú">
-        <span></span><span></span><span></span>
-      </button>
-      <nav>
-        <ul class="navbar__links">
-          <li><a href="index.html" aria-current="page">Inicio</a></li>
-          <li><a href="sobre-mi.html">Sobre mí</a></li>
-          <li><a href="habilidades.html">Habilidades</a></li>
-          <li><a href="curriculum.html">Currículum</a></li>
-          <li><a href="proyectos.html">Proyectos</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
+      <div class="navbar__nav">
+        <nav>
+          <ul class="navbar__links">
+            <li><a href="index.html" aria-current="page">Inicio</a></li>
+            <li><a href="sobre-mi.html">Sobre mí</a></li>
+            <li><a href="habilidades.html">Habilidades</a></li>
+            <li><a href="curriculum.html">Currículum</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar tema">
+          <span class="icon-sun">☀</span>
+          <span class="icon-moon">☾</span>
+        </button>
+        <button class="navbar__toggle" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </header>
 
   <main>
     <section class="hero">
       <div class="container hero__inner">
-        <p class="hero__greeting">Hola, mi nombre es</p>
+        <span class="hero__index">( 00 / bienvenida )</span>
         <h1 class="hero__name">Tu Nombre</h1>
-        <p class="hero__phrase">"Escribo código que resuelve problemas reales, un commit a la vez."</p>
+        <p class="hero__phrase"><span class="hero__phrase-mark">//</span>"Escribo código que resuelve problemas reales, un commit a la vez."</p>
         <div class="hero__actions">
           <a href="proyectos.html" class="btn btn--primary">Ver proyectos</a>
           <a href="contacto.html" class="btn btn--ghost">Contáctame</a>
@@ -43,7 +61,7 @@
   </main>
 
   <footer class="footer">
-    <div class="container">
+    <div class="container footer__inner">
       <p>&copy; 2026 Tu Nombre. Todos los derechos reservados.</p>
       <div class="footer__socials">
         <a href="contacto.html">LinkedIn</a>
@@ -53,6 +71,7 @@
     </div>
   </footer>
 
+  <script src="assets/js/theme.js"></script>
   <script src="assets/js/script.js"></script>
 </body>
 </html>
