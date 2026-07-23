@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Habilidades | Portafolio de Desarrollador</title>
+  <meta name="description" content="Habilidades técnicas del desarrollador." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script>
+    (function () {
+      var stored = localStorage.getItem("theme");
+      var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.setAttribute("data-theme", stored || (prefersDark ? "dark" : "light"));
+    })();
+  </script>
+</head>
+<body>
+
+  <div class="topline"></div>
+
+  <header class="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__brand">Tu Nombre<span>.</span></a>
+      <div class="navbar__nav">
+        <nav>
+          <ul class="navbar__links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobre-mi.html">Sobre mí</a></li>
+            <li><a href="habilidades.html" aria-current="page">Habilidades</a></li>
+            <li><a href="curriculum.html">Currículum</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar tema">
+          <span class="icon-sun">☀</span>
+          <span class="icon-moon">☾</span>
+        </button>
+        <button class="navbar__toggle" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="section">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__index">01</span>
+          <div>
+            <span class="section__eyebrow">Habilidades</span>
+            <h1 class="section__title">Lenguajes y herramientas</h1>
+          </div>
+        </div>
+
+        <!-- EDITAR: reemplaza data-labels y data-values con tus lenguajes/herramientas reales y tu nivel (0-100) -->
+        <div class="chart-wrapper">
+          <canvas id="langBarChart"
+            data-labels="HTML5 / CSS3,JavaScript,Git &amp; GitHub,Python"
+            data-values="50,50,50,50"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__index">02</span>
+          <div>
+            <span class="section__eyebrow">Frameworks y tecnologías</span>
+            <h2 class="section__title">Nivel de habilidad</h2>
+          </div>
+        </div>
+
+        <!-- EDITAR: ajusta data-percent (0-100) a tu nivel real en cada tecnología -->
+        <div class="skill-circles">
+          <div class="skill-circle-item">
+            <div class="chart-donut"><canvas class="skill-donut" data-percent="50"></canvas></div>
+            <p>Java</p>
+          </div>
+          <div class="skill-circle-item">
+            <div class="chart-donut"><canvas class="skill-donut" data-percent="50"></canvas></div>
+            <p>Node.js</p>
+          </div>
+          <div class="skill-circle-item">
+            <div class="chart-donut"><canvas class="skill-donut" data-percent="50"></canvas></div>
+            <p>Angular</p>
+          </div>
+          <div class="skill-circle-item">
+            <div class="chart-donut"><canvas class="skill-donut" data-percent="50"></canvas></div>
+            <p>MySQL</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; 2026 Tu Nombre. Todos los derechos reservados.</p>
+      <div class="footer__socials">
+        <a href="contacto.html">LinkedIn</a>
+        <a href="contacto.html">CompuTrabajo</a>
+        <a href="proyectos.html">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/habilidades.js"></script>
+</body>
+</html>
