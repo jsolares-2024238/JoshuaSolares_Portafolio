@@ -19,104 +19,83 @@
 </head>
 <body>
 
-  <div class="topline"></div>
+  <div class="bg-decor"><span></span><span></span></div>
+  <div class="grain"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+  <noscript><style>.bento__cell { opacity: 1 !important; transform: none !important; }</style></noscript>
 
-  <header class="navbar">
-    <div class="navbar__inner">
-      <a href="index.html" class="navbar__brand">Tu Nombre<span>.</span></a>
-      <div class="navbar__nav">
+  <header class="topbar">
+    <div class="container">
+      <div class="topbar__bar">
+        <a href="index.html" class="topbar__brand">Tu Nombre<span>.</span></a>
         <nav>
-          <ul class="navbar__links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="sobre-mi.html">Sobre mí</a></li>
-            <li><a href="habilidades.html">Habilidades</a></li>
-            <li><a href="curriculum.html" aria-current="page">Currículum</a></li>
-            <li><a href="proyectos.html">Proyectos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+          <ul class="topbar__links">
+            <li><a href="index.html"><span class="idx">00</span>Inicio</a></li>
+            <li><a href="sobre-mi.html"><span class="idx">01</span>Sobre mí</a></li>
+            <li><a href="habilidades.html"><span class="idx">02</span>Habilidades</a></li>
+            <li><a href="curriculum.html" aria-current="page"><span class="idx">03</span>Currículum</a></li>
+            <li><a href="proyectos.html"><span class="idx">04</span>Proyectos</a></li>
+            <li><a href="contacto.html"><span class="idx">05</span>Contacto</a></li>
           </ul>
         </nav>
-        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar tema">
-          <span class="icon-sun">☀</span>
-          <span class="icon-moon">☾</span>
-        </button>
-        <button class="navbar__toggle" aria-label="Abrir menú">
-          <span></span><span></span><span></span>
-        </button>
+        <div class="topbar__actions">
+          <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar tema">
+            <span class="icon-sun">☀</span>
+            <span class="icon-moon">☾</span>
+          </button>
+          <button class="topbar__toggle" aria-label="Abrir menú">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
       </div>
     </div>
   </header>
 
   <main>
+    <div class="container">
 
-    <section class="section">
-      <div class="container">
-        <div class="section__header">
-          <span class="section__index">01</span>
-          <div>
-            <span class="section__eyebrow">Currículum</span>
-            <h1 class="section__title">Educación</h1>
+      <div class="page-section">
+        <p class="page-section__label">01 — educación</p>
+        <div class="bento">
+          <div class="bento__cell bento__cell--w3 entry-cell">
+            <span class="date">[EDITAR: año inicio] — Presente</span>
+            <h3>[EDITAR: título de tu formación]</h3>
+            <p class="place">Fundación Kinal</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt.</p>
+          </div>
+          <div class="bento__cell entry-cell">
+            <span class="date">[EDITAR: año]</span>
+            <h3>[EDITAR: nombre del curso]</h3>
+            <p class="place">[EDITAR: nombre de la plataforma/institución]</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt.</p>
           </div>
         </div>
-
-        <ol class="timeline">
-          <li class="timeline__item">
-            <div class="timeline__content card">
-              <span class="timeline__date">[EDITAR: año inicio] — Presente</span>
-              <h3>[EDITAR: título de tu formación]</h3>
-              <p class="timeline__place">Fundación Kinal</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </li>
-          <li class="timeline__item">
-            <div class="timeline__content card">
-              <span class="timeline__date">[EDITAR: año]</span>
-              <h3>[EDITAR: nombre del curso]</h3>
-              <p class="timeline__place">[EDITAR: nombre de la plataforma/institución]</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </li>
-        </ol>
       </div>
-    </section>
 
-    <section class="section section--alt">
-      <div class="container">
-        <div class="section__header">
-          <span class="section__index">02</span>
-          <div>
-            <span class="section__eyebrow">Currículum</span>
-            <h2 class="section__title">Experiencia</h2>
+      <div class="page-section">
+        <p class="page-section__label">02 — experiencia</p>
+        <div class="bento">
+          <div class="bento__cell bento__cell--w2 entry-cell">
+            <span class="date">[EDITAR: año]</span>
+            <h3>[EDITAR: nombre de la práctica/puesto]</h3>
+            <p class="place">[EDITAR: nombre de la empresa/proyecto]</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt.</p>
+          </div>
+          <div class="bento__cell entry-cell">
+            <span class="date">Próximamente</span>
+            <h3>Prácticas profesionales</h3>
+            <p class="place">Por definir</p>
+          </div>
+          <div class="bento__cell bento__cell--accent cv-cell">
+            <a href="#" class="btn btn--ghost">Descargar CV</a>
           </div>
         </div>
-
-        <ol class="timeline">
-          <li class="timeline__item">
-            <div class="timeline__content card">
-              <span class="timeline__date">[EDITAR: año]</span>
-              <h3>[EDITAR: nombre de la práctica/puesto]</h3>
-              <p class="timeline__place">[EDITAR: nombre de la empresa/proyecto]</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </li>
-          <li class="timeline__item">
-            <div class="timeline__content card">
-              <span class="timeline__date">Próximamente</span>
-              <h3>Prácticas profesionales</h3>
-              <p class="timeline__place">Por definir</p>
-              <p>Espacio reservado para futuras prácticas profesionales una vez asignadas.</p>
-            </div>
-          </li>
-        </ol>
-
-        <div class="cv-download">
-          <a href="#" class="btn btn--primary">Descargar CV en PDF</a>
-        </div>
       </div>
-    </section>
 
+    </div>
   </main>
 
   <footer class="footer">

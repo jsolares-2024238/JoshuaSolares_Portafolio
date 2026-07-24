@@ -19,113 +19,162 @@
 </head>
 <body>
 
-  <div class="topline"></div>
+  <div class="bg-decor"><span></span><span></span></div>
+  <div class="grain"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+  <noscript><style>.bento__cell { opacity: 1 !important; transform: none !important; }</style></noscript>
 
-  <header class="navbar">
-    <div class="navbar__inner">
-      <a href="index.html" class="navbar__brand">Tu Nombre<span>.</span></a>
-      <div class="navbar__nav">
+  <header class="topbar">
+    <div class="container">
+      <div class="topbar__bar">
+        <a href="index.html" class="topbar__brand">Tu Nombre<span>.</span></a>
         <nav>
-          <ul class="navbar__links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="sobre-mi.html">Sobre mí</a></li>
-            <li><a href="habilidades.html">Habilidades</a></li>
-            <li><a href="curriculum.html">Currículum</a></li>
-            <li><a href="proyectos.html" aria-current="page">Proyectos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+          <ul class="topbar__links">
+            <li><a href="index.html"><span class="idx">00</span>Inicio</a></li>
+            <li><a href="sobre-mi.html"><span class="idx">01</span>Sobre mí</a></li>
+            <li><a href="habilidades.html"><span class="idx">02</span>Habilidades</a></li>
+            <li><a href="curriculum.html"><span class="idx">03</span>Currículum</a></li>
+            <li><a href="proyectos.html" aria-current="page"><span class="idx">04</span>Proyectos</a></li>
+            <li><a href="contacto.html"><span class="idx">05</span>Contacto</a></li>
           </ul>
         </nav>
-        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar tema">
-          <span class="icon-sun">☀</span>
-          <span class="icon-moon">☾</span>
-        </button>
-        <button class="navbar__toggle" aria-label="Abrir menú">
-          <span></span><span></span><span></span>
-        </button>
+        <div class="topbar__actions">
+          <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar tema">
+            <span class="icon-sun">☀</span>
+            <span class="icon-moon">☾</span>
+          </button>
+          <button class="topbar__toggle" aria-label="Abrir menú">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
       </div>
     </div>
   </header>
 
   <main>
+    <div class="container">
 
-    <section class="section">
-      <div class="container">
-        <div class="section__header">
-          <span class="section__index">01</span>
-          <div>
-            <span class="section__eyebrow">Vista de proyectos</span>
-            <h1 class="section__title">Capturas generales</h1>
-            <p class="section__subtitle">Un vistazo rápido a la interfaz de mis proyectos más recientes.</p>
+      <div class="page-section">
+        <p class="page-section__label">01 — vista de proyectos</p>
+        <div class="bento">
+          <div class="bento__cell bento__cell--w2 project-cell">
+            <div class="device-frame">
+              <div class="window-chrome">
+                <span class="window-chrome__dot"></span><span class="window-chrome__dot"></span><span class="window-chrome__dot"></span>
+                <span class="window-chrome__path">~/proyectos/proyecto-1</span>
+              </div>
+              <div class="device-frame__body">Captura — Proyecto 1</div>
+            </div>
+          </div>
+          <div class="bento__cell project-cell">
+            <div class="device-frame">
+              <div class="window-chrome">
+                <span class="window-chrome__dot"></span><span class="window-chrome__dot"></span><span class="window-chrome__dot"></span>
+                <span class="window-chrome__path">~/proyectos/proyecto-2</span>
+              </div>
+              <div class="device-frame__body">Captura — Proyecto 2</div>
+            </div>
+          </div>
+          <div class="bento__cell project-cell">
+            <div class="device-frame">
+              <div class="window-chrome">
+                <span class="window-chrome__dot"></span><span class="window-chrome__dot"></span><span class="window-chrome__dot"></span>
+                <span class="window-chrome__path">~/proyectos/proyecto-3</span>
+              </div>
+              <div class="device-frame__body">Captura — Proyecto 3</div>
+            </div>
           </div>
         </div>
+      </div>
 
-        <div class="gallery">
-          <div class="gallery__item">Captura — Proyecto 1</div>
-          <div class="gallery__item">Captura — Proyecto 2</div>
-          <div class="gallery__item">Captura — Proyecto 3</div>
+      <div class="page-section">
+        <p class="page-section__label">02 — portafolio de proyectos</p>
+        <div class="bento">
+
+          <details class="bento__cell bento__cell--w2 bento__cell--h2 project-cell">
+            <summary>
+              <div class="device-frame">
+                <div class="window-chrome">
+                  <span class="window-chrome__dot"></span><span class="window-chrome__dot"></span><span class="window-chrome__dot"></span>
+                  <span class="window-chrome__path">~/proyectos/nombre-del-proyecto-1</span>
+                </div>
+                <div class="device-frame__body">Captura del proyecto</div>
+              </div>
+              <h3>Nombre del Proyecto 1</h3>
+              <p>Breve descripción del proyecto: qué problema resuelve y cuál fue tu rol principal en su desarrollo.</p>
+              <span class="stack-label">Stack</span>
+              <ul class="project-cell__tags">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <span class="project-cell__expand"><span class="chevron">▾</span> ver detalle</span>
+            </summary>
+            <div class="project-cell__details">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — detalle extendido del proyecto y decisiones técnicas relevantes.</p>
+              <div class="device-frame">
+                <div class="window-chrome">
+                  <span class="window-chrome__dot"></span><span class="window-chrome__dot"></span><span class="window-chrome__dot"></span>
+                  <span class="window-chrome__path">proyecto-1/src/index.js</span>
+                </div>
+                <div class="device-frame__body">Captura de código</div>
+              </div>
+              <a href="#" class="btn btn--ghost" target="_blank" rel="noopener">Ver en GitHub</a>
+            </div>
+          </details>
+
+          <details class="bento__cell bento__cell--w2 project-cell">
+            <summary>
+              <div class="device-frame">
+                <div class="window-chrome">
+                  <span class="window-chrome__dot"></span><span class="window-chrome__dot"></span><span class="window-chrome__dot"></span>
+                  <span class="window-chrome__path">~/proyectos/nombre-del-proyecto-2</span>
+                </div>
+                <div class="device-frame__body">Captura del proyecto</div>
+              </div>
+              <h3>Nombre del Proyecto 2</h3>
+              <p>Breve descripción del proyecto: qué problema resuelve y cuál fue tu rol principal en su desarrollo.</p>
+              <span class="stack-label">Stack</span>
+              <ul class="project-cell__tags">
+                <li>Java</li>
+                <li>MySQL</li>
+              </ul>
+              <span class="project-cell__expand"><span class="chevron">▾</span> ver detalle</span>
+            </summary>
+            <div class="project-cell__details">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — detalle extendido del proyecto y decisiones técnicas relevantes.</p>
+              <a href="#" class="btn btn--ghost" target="_blank" rel="noopener">Ver en GitHub</a>
+            </div>
+          </details>
+
+          <details class="bento__cell bento__cell--w2 project-cell">
+            <summary>
+              <div class="device-frame">
+                <div class="window-chrome">
+                  <span class="window-chrome__dot"></span><span class="window-chrome__dot"></span><span class="window-chrome__dot"></span>
+                  <span class="window-chrome__path">~/proyectos/nombre-del-proyecto-3</span>
+                </div>
+                <div class="device-frame__body">Captura del proyecto</div>
+              </div>
+              <h3>Nombre del Proyecto 3</h3>
+              <p>Breve descripción del proyecto: qué problema resuelve y cuál fue tu rol principal en su desarrollo.</p>
+              <span class="stack-label">Stack</span>
+              <ul class="project-cell__tags">
+                <li>Node.js</li>
+                <li>Express</li>
+              </ul>
+              <span class="project-cell__expand"><span class="chevron">▾</span> ver detalle</span>
+            </summary>
+            <div class="project-cell__details">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — detalle extendido del proyecto y decisiones técnicas relevantes.</p>
+              <a href="#" class="btn btn--ghost" target="_blank" rel="noopener">Ver en GitHub</a>
+            </div>
+          </details>
+
         </div>
       </div>
-    </section>
 
-    <section class="section section--alt">
-      <div class="container">
-        <div class="section__header">
-          <span class="section__index">02</span>
-          <div>
-            <span class="section__eyebrow">Portafolio</span>
-            <h2 class="section__title">Proyectos</h2>
-          </div>
-        </div>
-
-        <div class="projects-grid">
-
-          <article class="project-card card">
-            <div class="project-card__thumb">Captura del proyecto</div>
-            <h3>Nombre del Proyecto 1</h3>
-            <p>
-              Breve descripción del proyecto: qué problema resuelve y cuál fue tu rol
-              principal en su desarrollo.
-            </p>
-            <ul class="project-card__tags">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-            </ul>
-            <a href="#" class="btn btn--ghost" target="_blank" rel="noopener">Ver en GitHub</a>
-          </article>
-
-          <article class="project-card card">
-            <div class="project-card__thumb">Captura del proyecto</div>
-            <h3>Nombre del Proyecto 2</h3>
-            <p>
-              Breve descripción del proyecto: qué problema resuelve y cuál fue tu rol
-              principal en su desarrollo.
-            </p>
-            <ul class="project-card__tags">
-              <li>Java</li>
-              <li>MySQL</li>
-            </ul>
-            <a href="#" class="btn btn--ghost" target="_blank" rel="noopener">Ver en GitHub</a>
-          </article>
-
-          <article class="project-card card">
-            <div class="project-card__thumb">Captura del proyecto</div>
-            <h3>Nombre del Proyecto 3</h3>
-            <p>
-              Breve descripción del proyecto: qué problema resuelve y cuál fue tu rol
-              principal en su desarrollo.
-            </p>
-            <ul class="project-card__tags">
-              <li>Node.js</li>
-              <li>Express</li>
-            </ul>
-            <a href="#" class="btn btn--ghost" target="_blank" rel="noopener">Ver en GitHub</a>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
+    </div>
   </main>
 
   <footer class="footer">

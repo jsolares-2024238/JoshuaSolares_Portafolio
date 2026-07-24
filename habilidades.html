@@ -19,86 +19,80 @@
 </head>
 <body>
 
-  <div class="topline"></div>
+  <div class="bg-decor"><span></span><span></span></div>
+  <div class="grain"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+  <noscript><style>.bento__cell { opacity: 1 !important; transform: none !important; }</style></noscript>
 
-  <header class="navbar">
-    <div class="navbar__inner">
-      <a href="index.html" class="navbar__brand">Tu Nombre<span>.</span></a>
-      <div class="navbar__nav">
+  <header class="topbar">
+    <div class="container">
+      <div class="topbar__bar">
+        <a href="index.html" class="topbar__brand">Tu Nombre<span>.</span></a>
         <nav>
-          <ul class="navbar__links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="sobre-mi.html">Sobre mí</a></li>
-            <li><a href="habilidades.html" aria-current="page">Habilidades</a></li>
-            <li><a href="curriculum.html">Currículum</a></li>
-            <li><a href="proyectos.html">Proyectos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+          <ul class="topbar__links">
+            <li><a href="index.html"><span class="idx">00</span>Inicio</a></li>
+            <li><a href="sobre-mi.html"><span class="idx">01</span>Sobre mí</a></li>
+            <li><a href="habilidades.html" aria-current="page"><span class="idx">02</span>Habilidades</a></li>
+            <li><a href="curriculum.html"><span class="idx">03</span>Currículum</a></li>
+            <li><a href="proyectos.html"><span class="idx">04</span>Proyectos</a></li>
+            <li><a href="contacto.html"><span class="idx">05</span>Contacto</a></li>
           </ul>
         </nav>
-        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar tema">
-          <span class="icon-sun">☀</span>
-          <span class="icon-moon">☾</span>
-        </button>
-        <button class="navbar__toggle" aria-label="Abrir menú">
-          <span></span><span></span><span></span>
-        </button>
+        <div class="topbar__actions">
+          <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar tema">
+            <span class="icon-sun">☀</span>
+            <span class="icon-moon">☾</span>
+          </button>
+          <button class="topbar__toggle" aria-label="Abrir menú">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
       </div>
     </div>
   </header>
 
   <main>
+    <div class="container">
 
-    <section class="section">
-      <div class="container">
-        <div class="section__header">
-          <span class="section__index">01</span>
-          <div>
-            <span class="section__eyebrow">Habilidades</span>
-            <h1 class="section__title">Lenguajes y herramientas</h1>
+      <div class="page-section">
+        <p class="page-section__label">01 — lenguajes y herramientas</p>
+        <div class="bento">
+          <!-- EDITAR: reemplaza data-labels y data-values con tus lenguajes/herramientas reales y tu nivel (0-100) -->
+          <div class="bento__cell bento__cell--w4 chart-cell">
+            <span class="bento__label">Nivel por herramienta</span>
+            <div class="chart-wrapper">
+              <canvas id="langBarChart"
+                data-labels="HTML5 / CSS3,JavaScript,Git &amp; GitHub,Python"
+                data-values="50,50,50,50"></canvas>
+            </div>
           </div>
-        </div>
-
-        <!-- EDITAR: reemplaza data-labels y data-values con tus lenguajes/herramientas reales y tu nivel (0-100) -->
-        <div class="chart-wrapper">
-          <canvas id="langBarChart"
-            data-labels="HTML5 / CSS3,JavaScript,Git &amp; GitHub,Python"
-            data-values="50,50,50,50"></canvas>
         </div>
       </div>
-    </section>
 
-    <section class="section section--alt">
-      <div class="container">
-        <div class="section__header">
-          <span class="section__index">02</span>
-          <div>
-            <span class="section__eyebrow">Frameworks y tecnologías</span>
-            <h2 class="section__title">Nivel de habilidad</h2>
-          </div>
-        </div>
-
+      <div class="page-section">
+        <p class="page-section__label">02 — frameworks y tecnologías</p>
         <!-- EDITAR: ajusta data-percent (0-100) a tu nivel real en cada tecnología -->
-        <div class="skill-circles">
-          <div class="skill-circle-item">
+        <div class="bento">
+          <div class="bento__cell bento__cell--w2 donut-cell">
             <div class="chart-donut"><canvas class="skill-donut" data-percent="50"></canvas></div>
             <p>Java</p>
           </div>
-          <div class="skill-circle-item">
+          <div class="bento__cell donut-cell">
             <div class="chart-donut"><canvas class="skill-donut" data-percent="50"></canvas></div>
             <p>Node.js</p>
           </div>
-          <div class="skill-circle-item">
+          <div class="bento__cell donut-cell">
             <div class="chart-donut"><canvas class="skill-donut" data-percent="50"></canvas></div>
             <p>Angular</p>
           </div>
-          <div class="skill-circle-item">
+          <div class="bento__cell donut-cell">
             <div class="chart-donut"><canvas class="skill-donut" data-percent="50"></canvas></div>
             <p>MySQL</p>
           </div>
         </div>
       </div>
-    </section>
 
+    </div>
   </main>
 
   <footer class="footer">

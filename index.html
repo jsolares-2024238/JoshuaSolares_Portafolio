@@ -19,45 +19,63 @@
 </head>
 <body>
 
-  <div class="topline"></div>
+  <div class="bg-decor"><span></span><span></span></div>
+  <div class="grain"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+  <noscript><style>.bento__cell { opacity: 1 !important; transform: none !important; }</style></noscript>
 
-  <header class="navbar">
-    <div class="navbar__inner">
-      <a href="index.html" class="navbar__brand">Tu Nombre<span>.</span></a>
-      <div class="navbar__nav">
+  <header class="topbar">
+    <div class="container">
+      <div class="topbar__bar">
+        <a href="index.html" class="topbar__brand">Tu Nombre<span>.</span></a>
         <nav>
-          <ul class="navbar__links">
-            <li><a href="index.html" aria-current="page">Inicio</a></li>
-            <li><a href="sobre-mi.html">Sobre mí</a></li>
-            <li><a href="habilidades.html">Habilidades</a></li>
-            <li><a href="curriculum.html">Currículum</a></li>
-            <li><a href="proyectos.html">Proyectos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+          <ul class="topbar__links">
+            <li><a href="index.html" aria-current="page"><span class="idx">00</span>Inicio</a></li>
+            <li><a href="sobre-mi.html"><span class="idx">01</span>Sobre mí</a></li>
+            <li><a href="habilidades.html"><span class="idx">02</span>Habilidades</a></li>
+            <li><a href="curriculum.html"><span class="idx">03</span>Currículum</a></li>
+            <li><a href="proyectos.html"><span class="idx">04</span>Proyectos</a></li>
+            <li><a href="contacto.html"><span class="idx">05</span>Contacto</a></li>
           </ul>
         </nav>
-        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar tema">
-          <span class="icon-sun">☀</span>
-          <span class="icon-moon">☾</span>
-        </button>
-        <button class="navbar__toggle" aria-label="Abrir menú">
-          <span></span><span></span><span></span>
-        </button>
+        <div class="topbar__actions">
+          <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar tema">
+            <span class="icon-sun">☀</span>
+            <span class="icon-moon">☾</span>
+          </button>
+          <button class="topbar__toggle" aria-label="Abrir menú">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
       </div>
     </div>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="container hero__inner">
-        <span class="hero__index">( 00 / bienvenida )</span>
-        <h1 class="hero__name">Tu Nombre</h1>
-        <p class="hero__phrase"><span class="hero__phrase-mark">//</span>"Escribo código que resuelve problemas reales, un commit a la vez."</p>
-        <div class="hero__actions">
-          <a href="proyectos.html" class="btn btn--primary">Ver proyectos</a>
-          <a href="contacto.html" class="btn btn--ghost">Contáctame</a>
+    <div class="container">
+      <div class="bento">
+        <div class="bento__cell bento__cell--w3 bento__cell--h2 hero-cell">
+          <span class="md-eyebrow">( bienvenida )</span>
+          <h1>Tu Nombre</h1>
+          <p class="phrase">"Escribo código que resuelve problemas reales, un commit a la vez."</p>
+          <div class="hero__actions">
+            <a href="proyectos.html" class="btn btn--primary">Ver proyectos</a>
+            <a href="contacto.html" class="btn btn--ghost">Contáctame</a>
+          </div>
+        </div>
+
+        <div class="bento__cell bento__cell--accent bento__cell--h2 status-cell">
+          <div>
+            <span class="bento__label">Estado</span>
+            <div class="code-tag">&lt;status: <span class="code-tag__value">[EDITAR: available]</span> /&gt;</div>
+          </div>
+          <div>
+            <span class="bento__label">Enfoque</span>
+            <p>Desarrollo Fullstack</p>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
   </main>
 
   <footer class="footer">
