@@ -7,7 +7,7 @@
   <meta name="description" content="Educación y experiencia del desarrollador." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <script>
     (function () {
@@ -19,34 +19,29 @@
 </head>
 <body>
 
-  <div class="bg-decor"><span></span><span></span></div>
   <div class="grain"></div>
-  <div class="cursor-ring" aria-hidden="true"></div>
-  <noscript><style>.bento__cell { opacity: 1 !important; transform: none !important; }</style></noscript>
 
   <header class="topbar">
-    <div class="container">
-      <div class="topbar__bar">
-        <a href="index.html" class="topbar__brand">Tu Nombre<span>.</span></a>
+    <div class="container topbar__inner">
+      <a href="index.html" class="topbar__brand">Joshua Solares<span>.</span></a>
+      <div class="topbar__nav">
         <nav>
           <ul class="topbar__links">
-            <li><a href="index.html"><span class="idx">00</span>Inicio</a></li>
-            <li><a href="sobre-mi.html"><span class="idx">01</span>Sobre mí</a></li>
-            <li><a href="habilidades.html"><span class="idx">02</span>Habilidades</a></li>
-            <li><a href="curriculum.html" aria-current="page"><span class="idx">03</span>Currículum</a></li>
-            <li><a href="proyectos.html"><span class="idx">04</span>Proyectos</a></li>
-            <li><a href="contacto.html"><span class="idx">05</span>Contacto</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobre-mi.html">Sobre mí</a></li>
+            <li><a href="habilidades.html">Habilidades</a></li>
+            <li><a href="curriculum.html" aria-current="page">Currículum</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
           </ul>
         </nav>
-        <div class="topbar__actions">
-          <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar tema">
-            <span class="icon-sun">☀</span>
-            <span class="icon-moon">☾</span>
-          </button>
-          <button class="topbar__toggle" aria-label="Abrir menú">
-            <span></span><span></span><span></span>
-          </button>
-        </div>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar tema">
+          <span class="icon-sun">☀</span>
+          <span class="icon-moon">☾</span>
+        </button>
+        <button class="topbar__toggle" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </div>
   </header>
@@ -54,53 +49,49 @@
   <main>
     <div class="container">
 
-      <div class="page-section">
-        <p class="page-section__label">01 — educación</p>
-        <div class="bento">
-          <div class="bento__cell bento__cell--w3 entry-cell">
-            <span class="date">[EDITAR: año inicio] — Presente</span>
-            <h3>[EDITAR: título de tu formación]</h3>
-            <p class="place">Fundación Kinal</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt.</p>
-          </div>
-          <div class="bento__cell entry-cell">
-            <span class="date">[EDITAR: año]</span>
-            <h3>[EDITAR: nombre del curso]</h3>
-            <p class="place">[EDITAR: nombre de la plataforma/institución]</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt.</p>
-          </div>
-        </div>
+      <div class="page-header">
+        <span class="page-header__folio">— 01 —</span>
+        <h1 class="page-header__title">Educación</h1>
       </div>
 
-      <div class="page-section">
-        <p class="page-section__label">02 — experiencia</p>
-        <div class="bento">
-          <div class="bento__cell bento__cell--w2 entry-cell">
-            <span class="date">[EDITAR: año]</span>
-            <h3>[EDITAR: nombre de la práctica/puesto]</h3>
-            <p class="place">[EDITAR: nombre de la empresa/proyecto]</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt.</p>
-          </div>
-          <div class="bento__cell entry-cell">
-            <span class="date">Próximamente</span>
-            <h3>Prácticas profesionales</h3>
-            <p class="place">Por definir</p>
-          </div>
-          <div class="bento__cell bento__cell--accent cv-cell">
-            <a href="#" class="btn btn--ghost">Descargar CV</a>
-          </div>
-        </div>
+      <ol class="timeline">
+        <li class="timeline__item">
+          <span class="timeline__year">2024 — 2026</span>
+          <h3>Perito en Informática</h3>
+          <p class="timeline__place">Fundación Kinal</p>
+          <p>Formación técnica de nivel medio enfocada en informática y desarrollo de software.</p>
+        </li>
+        <li class="timeline__item">
+          <span class="timeline__year">2025 — 2026</span>
+          <h3>Desarrollador Fullstack Java</h3>
+          <p class="timeline__place">Fundación Kinal</p>
+          <p>Curso técnico de 180 horas: backend en Java (programación avanzada, JPA/Hibernate,
+            MySQL, web services SOAP y REST) y frontend con HTML5, JavaScript, React y TypeScript.</p>
+        </li>
+      </ol>
+
+      <hr class="rule" />
+
+      <div class="page-header">
+        <span class="page-header__folio">— 02 —</span>
+        <h2 class="page-header__title">Experiencia</h2>
       </div>
+
+      <ol class="timeline">
+        <li class="timeline__item">
+          <span class="timeline__year">Inicia 16 de agosto de 2026</span>
+          <h3>Prácticas profesionales — área técnica</h3>
+          <p class="timeline__place">RedIntelfon, vía TEC Guatemala</p>
+          <p>400 horas de prácticas profesionales. Aún no iniciadas.</p>
+        </li>
+      </ol>
 
     </div>
   </main>
 
   <footer class="footer">
     <div class="container footer__inner">
-      <p>&copy; 2026 Tu Nombre. Todos los derechos reservados.</p>
+      <p>&copy; 2026 Joshua Solares. Todos los derechos reservados.</p>
       <div class="footer__socials">
         <a href="contacto.html">LinkedIn</a>
         <a href="contacto.html">CompuTrabajo</a>

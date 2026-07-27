@@ -7,7 +7,7 @@
   <meta name="description" content="Enlaces de contacto: LinkedIn y CompuTrabajo." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <script>
     (function () {
@@ -19,34 +19,29 @@
 </head>
 <body>
 
-  <div class="bg-decor"><span></span><span></span></div>
   <div class="grain"></div>
-  <div class="cursor-ring" aria-hidden="true"></div>
-  <noscript><style>.bento__cell { opacity: 1 !important; transform: none !important; }</style></noscript>
 
   <header class="topbar">
-    <div class="container">
-      <div class="topbar__bar">
-        <a href="index.html" class="topbar__brand">Tu Nombre<span>.</span></a>
+    <div class="container topbar__inner">
+      <a href="index.html" class="topbar__brand">Joshua Solares<span>.</span></a>
+      <div class="topbar__nav">
         <nav>
           <ul class="topbar__links">
-            <li><a href="index.html"><span class="idx">00</span>Inicio</a></li>
-            <li><a href="sobre-mi.html"><span class="idx">01</span>Sobre mí</a></li>
-            <li><a href="habilidades.html"><span class="idx">02</span>Habilidades</a></li>
-            <li><a href="curriculum.html"><span class="idx">03</span>Currículum</a></li>
-            <li><a href="proyectos.html"><span class="idx">04</span>Proyectos</a></li>
-            <li><a href="contacto.html" aria-current="page"><span class="idx">05</span>Contacto</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobre-mi.html">Sobre mí</a></li>
+            <li><a href="habilidades.html">Habilidades</a></li>
+            <li><a href="curriculum.html">Currículum</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="contacto.html" aria-current="page">Contacto</a></li>
           </ul>
         </nav>
-        <div class="topbar__actions">
-          <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar tema">
-            <span class="icon-sun">☀</span>
-            <span class="icon-moon">☾</span>
-          </button>
-          <button class="topbar__toggle" aria-label="Abrir menú">
-            <span></span><span></span><span></span>
-          </button>
-        </div>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar tema">
+          <span class="icon-sun">☀</span>
+          <span class="icon-moon">☾</span>
+        </button>
+        <button class="topbar__toggle" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </div>
   </header>
@@ -55,7 +50,7 @@
     <div class="container">
 
       <div class="page-header">
-        <span class="page-header__eyebrow">Contacto</span>
+        <span class="page-header__folio">— 01 —</span>
         <h1 class="page-header__title">Hablemos</h1>
         <p class="page-header__subtitle">
           Puedes encontrarme en las siguientes plataformas, muy utilizadas por
@@ -63,38 +58,35 @@
         </p>
       </div>
 
-      <div class="bento">
-        <a href="https://www.linkedin.com/in/tu-usuario" target="_blank" rel="noopener" class="bento__cell bento__cell--w2 contact-cell">
-          <h3>LinkedIn</h3>
-          <p>Perfil profesional, experiencia y conexiones del sector.</p>
-          <span class="handle">linkedin.com/in/tu-usuario</span>
-        </a>
-
-        <a href="https://www.computrabajo.com.gt/" target="_blank" rel="noopener" class="bento__cell contact-cell">
-          <h3>CompuTrabajo</h3>
-          <p>Currículum y postulaciones a oportunidades laborales.</p>
-          <span class="handle">computrabajo.com/tu-usuario</span>
-        </a>
-
-        <a href="https://github.com/tu-usuario" target="_blank" rel="noopener" class="bento__cell contact-cell">
-          <h3>GitHub</h3>
-          <p>Repositorios y código fuente de mis proyectos.</p>
-          <span class="handle">github.com/tu-usuario</span>
-        </a>
-
-        <a href="mailto:tu.correo@ejemplo.com" class="bento__cell contact-cell">
-          <h3>Correo</h3>
-          <p>Para propuestas, dudas o contacto directo.</p>
-          <span class="handle">tu.correo@ejemplo.com</span>
-        </a>
-      </div>
+      <ul class="index-list">
+        <li class="index-row">
+          <a href="https://www.linkedin.com/in/joshua-solares-a4a744363/" target="_blank" rel="noopener">LinkedIn</a>
+          <span class="index-row__desc">Perfil profesional, experiencia y conexiones del sector.</span>
+        </li>
+        <li class="index-row">
+          <a href="https://www.computrabajo.com.gt/" target="_blank" rel="noopener">CompuTrabajo</a>
+          <span class="index-row__desc">Currículum y postulaciones a oportunidades laborales.</span>
+        </li>
+        <li class="index-row">
+          <a href="https://github.com/JoshuaSolares" target="_blank" rel="noopener">GitHub</a>
+          <span class="index-row__desc">Repositorios y código fuente de mis proyectos.</span>
+        </li>
+        <li class="index-row">
+          <a href="https://github.com/jsolares-2024238" target="_blank" rel="noopener">GitHub (Kinal)</a>
+          <span class="index-row__desc">Cuenta de GitHub usada para los proyectos del colegio.</span>
+        </li>
+        <li class="index-row">
+          <a href="mailto:joshuavladimir000@gmail.com">Correo</a>
+          <span class="index-row__desc">Para propuestas, dudas o contacto directo.</span>
+        </li>
+      </ul>
 
     </div>
   </main>
 
   <footer class="footer">
     <div class="container footer__inner">
-      <p>&copy; 2026 Tu Nombre. Todos los derechos reservados.</p>
+      <p>&copy; 2026 Joshua Solares. Todos los derechos reservados.</p>
       <div class="footer__socials">
         <a href="contacto.html">LinkedIn</a>
         <a href="contacto.html">CompuTrabajo</a>

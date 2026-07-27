@@ -31,7 +31,7 @@ function buildCharts() {
       const y = (chartArea.top + chartArea.bottom) / 2;
 
       ctx.save();
-      ctx.font = "600 15px 'JetBrains Mono', monospace";
+      ctx.font = "italic 600 15px 'Fraunces', serif";
       ctx.fillStyle = colors.text;
       ctx.textAlign = "center";
       ctx.textBaseline = "middle";
