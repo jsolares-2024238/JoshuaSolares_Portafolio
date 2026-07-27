@@ -7,7 +7,7 @@
   <meta name="description" content="Portafolio de desarrollador — bienvenida." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <script>
     (function () {
@@ -19,68 +19,57 @@
 </head>
 <body>
 
-  <div class="bg-decor"><span></span><span></span></div>
   <div class="grain"></div>
-  <div class="cursor-ring" aria-hidden="true"></div>
-  <noscript><style>.bento__cell { opacity: 1 !important; transform: none !important; }</style></noscript>
 
   <header class="topbar">
-    <div class="container">
-      <div class="topbar__bar">
-        <a href="index.html" class="topbar__brand">Tu Nombre<span>.</span></a>
+    <div class="container topbar__inner">
+      <a href="index.html" class="topbar__brand">Joshua Solares<span>.</span></a>
+      <div class="topbar__nav">
         <nav>
           <ul class="topbar__links">
-            <li><a href="index.html" aria-current="page"><span class="idx">00</span>Inicio</a></li>
-            <li><a href="sobre-mi.html"><span class="idx">01</span>Sobre mí</a></li>
-            <li><a href="habilidades.html"><span class="idx">02</span>Habilidades</a></li>
-            <li><a href="curriculum.html"><span class="idx">03</span>Currículum</a></li>
-            <li><a href="proyectos.html"><span class="idx">04</span>Proyectos</a></li>
-            <li><a href="contacto.html"><span class="idx">05</span>Contacto</a></li>
+            <li><a href="index.html" aria-current="page">Inicio</a></li>
+            <li><a href="sobre-mi.html">Sobre mí</a></li>
+            <li><a href="habilidades.html">Habilidades</a></li>
+            <li><a href="curriculum.html">Currículum</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
           </ul>
         </nav>
-        <div class="topbar__actions">
-          <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar tema">
-            <span class="icon-sun">☀</span>
-            <span class="icon-moon">☾</span>
-          </button>
-          <button class="topbar__toggle" aria-label="Abrir menú">
-            <span></span><span></span><span></span>
-          </button>
-        </div>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar tema">
+          <span class="icon-sun">☀</span>
+          <span class="icon-moon">☾</span>
+        </button>
+        <button class="topbar__toggle" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </div>
   </header>
 
   <main>
     <div class="container">
-      <div class="bento">
-        <div class="bento__cell bento__cell--w3 bento__cell--h2 hero-cell">
-          <span class="md-eyebrow">( bienvenida )</span>
-          <h1>Tu Nombre</h1>
-          <p class="phrase">"Escribo código que resuelve problemas reales, un commit a la vez."</p>
-          <div class="hero__actions">
-            <a href="proyectos.html" class="btn btn--primary">Ver proyectos</a>
-            <a href="contacto.html" class="btn btn--ghost">Contáctame</a>
+      <section class="hero">
+        <div class="hero__grid">
+          <div>
+            <span class="hero__folio">— 00 —</span>
+            <h1 class="hero__name">Joshua Solares</h1>
+            <blockquote class="hero__phrase">"Aprendiendo a construir software, un proyecto a la vez, con la meta de que la tecnología sirva a la gente."</blockquote>
+            <div class="hero__actions">
+              <a href="proyectos.html" class="btn btn--primary">Ver proyectos</a>
+              <a href="contacto.html" class="btn btn--ghost">Contáctame</a>
+            </div>
+          </div>
+          <div class="hero__photo">
+            <img src="assets/img/joshua.png" alt="Foto de Joshua Solares" />
           </div>
         </div>
-
-        <div class="bento__cell bento__cell--accent bento__cell--h2 status-cell">
-          <div>
-            <span class="bento__label">Estado</span>
-            <div class="code-tag">&lt;status: <span class="code-tag__value">[EDITAR: available]</span> /&gt;</div>
-          </div>
-          <div>
-            <span class="bento__label">Enfoque</span>
-            <p>Desarrollo Fullstack</p>
-          </div>
-        </div>
-      </div>
+      </section>
     </div>
   </main>
 
   <footer class="footer">
     <div class="container footer__inner">
-      <p>&copy; 2026 Tu Nombre. Todos los derechos reservados.</p>
+      <p>&copy; 2026 Joshua Solares. Todos los derechos reservados.</p>
       <div class="footer__socials">
         <a href="contacto.html">LinkedIn</a>
         <a href="contacto.html">CompuTrabajo</a>
