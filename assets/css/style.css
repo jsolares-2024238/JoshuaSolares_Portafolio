@@ -148,6 +148,7 @@ html {
 /* ---------- Topbar ---------- */
 
 .topbar {
+  position: relative;
   border-bottom: 1px solid var(--color-border);
 }
 
@@ -264,6 +265,7 @@ html {
 
   .topbar__links {
     position: absolute;
+    z-index: 100;
     top: 100%;
     left: 0;
     right: 0;
@@ -427,9 +429,10 @@ main {
 
 .spec-row {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: baseline;
-  gap: 1.5rem;
+  gap: 0.5rem 1.5rem;
   padding: 1.1rem 0;
   border-bottom: 1px solid var(--color-border);
 }
@@ -728,9 +731,10 @@ main {
 
 .index-row {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: baseline;
-  gap: 1.5rem;
+  gap: 0.5rem 1.5rem;
   padding: 1.25rem 0;
   border-bottom: 1px solid var(--color-border);
 }
