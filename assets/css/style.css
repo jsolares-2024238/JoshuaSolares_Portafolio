@@ -443,6 +443,13 @@ main {
   margin-bottom: 1.5rem;
 }
 
+.hero__role {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin: -0.75rem 0 1.25rem;
+}
+
 .hero__phrase {
   font-family: var(--font-display);
   font-style: italic;
@@ -684,6 +691,17 @@ main {
   display: block;
 }
 
+.project-spread--text {
+  display: block;
+  max-width: var(--text-width);
+}
+
+.project-spread__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
 .project-spread--featured .project-spread__media {
   margin-bottom: 2rem;
 }
@@ -849,6 +867,13 @@ main {
 .index-row a:hover {
   color: var(--color-text);
   text-decoration-color: var(--color-text);
+}
+
+.index-row__label {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--color-text);
 }
 
 .index-row__desc {
