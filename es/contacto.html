@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto | Portafolio de Desarrollador</title>
+  <meta name="description" content="Enlaces de contacto: LinkedIn y CompuTrabajo." />
+  <link rel="alternate" hreflang="en" href="https://joshuasolares.me/contact.html" />
+  <link rel="alternate" hreflang="es" href="https://joshuasolares.me/es/contacto.html" />
+  <link rel="alternate" hreflang="x-default" href="https://joshuasolares.me/contact.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <script>
+    (function () {
+      var stored = localStorage.getItem("theme");
+      var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.setAttribute("data-theme", stored || (prefersDark ? "dark" : "light"));
+    })();
+  </script>
+</head>
+<body>
+
+  <div class="grain"></div>
+
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a href="index.html" class="topbar__brand">Joshua Solares<span>.</span></a>
+      <div class="topbar__nav">
+        <nav>
+          <ul class="topbar__links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobre-mi.html">Sobre mí</a></li>
+            <li><a href="habilidades.html">Habilidades</a></li>
+            <li><a href="curriculum.html">Currículum</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="Idioma">
+          <svg class="lang-switch__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z" /></svg>
+          <a href="../contact.html" lang="en" hreflang="en" aria-label="English">EN</a>
+          <a href="contacto.html" lang="es" hreflang="es" aria-label="Español" aria-current="true">ES</a>
+        </div>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar tema">
+          <span class="icon-sun">☀</span>
+          <span class="icon-moon">☾</span>
+        </button>
+        <button class="topbar__toggle" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <div class="page-header">
+        <span class="page-header__folio">— 01 —</span>
+        <h1 class="page-header__title">Hablemos</h1>
+        <p class="page-header__subtitle">
+          Puedes encontrarme en las siguientes plataformas, muy utilizadas por
+          empresas para encontrar nuevo talento.
+        </p>
+      </div>
+
+      <ul class="index-list">
+        <li class="index-row">
+          <a href="https://www.linkedin.com/in/joshua-solares-a4a744363/" target="_blank" rel="noopener">LinkedIn</a>
+          <span class="index-row__desc">Perfil profesional, experiencia y conexiones del sector.</span>
+        </li>
+        <li class="index-row">
+          <a href="https://www.computrabajo.com.gt/" target="_blank" rel="noopener">CompuTrabajo</a>
+          <span class="index-row__desc">Currículum y postulaciones a oportunidades laborales.</span>
+        </li>
+        <li class="index-row">
+          <a href="https://github.com/JoshuaSolares" target="_blank" rel="noopener">GitHub</a>
+          <span class="index-row__desc">Repositorios y código fuente de mis proyectos.</span>
+        </li>
+        <li class="index-row">
+          <a href="https://github.com/jsolares-2024238" target="_blank" rel="noopener">GitHub (Kinal)</a>
+          <span class="index-row__desc">Cuenta de GitHub usada para los proyectos del colegio.</span>
+        </li>
+        <li class="index-row">
+          <a href="../assets/cv/Joshua-Solares-CV-ES.pdf" download>CV (PDF)</a>
+          <span class="index-row__desc">Descarga mi currículum en formato PDF.</span>
+        </li>
+        <li class="index-row">
+          <a href="mailto:joshuavladimir000@gmail.com">Correo</a>
+          <span class="index-row__desc">Para propuestas, dudas o contacto directo.</span>
+        </li>
+      </ul>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; 2026 Joshua Solares. Todos los derechos reservados.</p>
+      <div class="footer__socials">
+        <a href="contacto.html">LinkedIn</a>
+        <a href="contacto.html">CompuTrabajo</a>
+        <a href="proyectos.html">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>

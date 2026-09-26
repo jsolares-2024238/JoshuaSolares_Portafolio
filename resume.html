@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume | Developer Portfolio</title>
+  <meta name="description" content="Education and experience of the developer." />
+  <link rel="alternate" hreflang="en" href="https://joshuasolares.me/resume.html" />
+  <link rel="alternate" hreflang="es" href="https://joshuasolares.me/es/curriculum.html" />
+  <link rel="alternate" hreflang="x-default" href="https://joshuasolares.me/resume.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script>
+    (function () {
+      var stored = localStorage.getItem("theme");
+      var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.setAttribute("data-theme", stored || (prefersDark ? "dark" : "light"));
+    })();
+  </script>
+</head>
+<body>
+
+  <div class="grain"></div>
+
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a href="index.html" class="topbar__brand">Joshua Solares<span>.</span></a>
+      <div class="topbar__nav">
+        <nav>
+          <ul class="topbar__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="resume.html" aria-current="page">Resume</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <svg class="lang-switch__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z" /></svg>
+          <a href="resume.html" lang="en" hreflang="en" aria-label="English" aria-current="true">EN</a>
+          <a href="es/curriculum.html" lang="es" hreflang="es" aria-label="Español">ES</a>
+        </div>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme">
+          <span class="icon-sun">☀</span>
+          <span class="icon-moon">☾</span>
+        </button>
+        <button class="topbar__toggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <div class="page-header">
+        <span class="page-header__folio">— 01 —</span>
+        <h1 class="page-header__title">Education</h1>
+        <div class="page-header__actions">
+          <a href="assets/cv/Joshua-Solares-CV-EN.pdf" class="btn btn--primary" download>Download CV (PDF)</a>
+          <a href="assets/cv/Joshua-Solares-CV-ES.pdf" class="btn btn--ghost" hreflang="es" download>Spanish version (PDF)</a>
+        </div>
+      </div>
+
+      <ol class="timeline">
+        <li class="timeline__item">
+          <span class="timeline__year">2024 — 2026</span>
+          <h3>Computer Science Technician (Perito en Informática)</h3>
+          <p class="timeline__place">Fundación Kinal</p>
+          <p>Technical high school program focused on computing and software development.</p>
+        </li>
+        <li class="timeline__item">
+          <span class="timeline__year">2025 — 2026</span>
+          <h3>Fullstack Java Developer</h3>
+          <p class="timeline__place">Fundación Kinal</p>
+          <p>180-hour technical program: Java backend (advanced programming, JPA/Hibernate,
+            MySQL, SOAP and REST web services) and frontend with HTML5, JavaScript, React and TypeScript.</p>
+        </li>
+      </ol>
+
+      <hr class="rule" />
+
+      <div class="page-header">
+        <span class="page-header__folio">— 02 —</span>
+        <h2 class="page-header__title">Experience</h2>
+      </div>
+
+      <ol class="timeline">
+        <li class="timeline__item">
+          <span class="timeline__year">Aug 17 — Nov 3, 2026 · Completed</span>
+          <h3>Professional internship — technical area</h3>
+          <p class="timeline__place">RedIntelfon, through TEC Guatemala</p>
+          <p>400-hour professional internship.</p>
+          <ul class="timeline__list">
+            <li>Automated bank statement processing workflows with Make and Python, surfacing the results in a dashboard.</li>
+            <li>Built AI-powered flows on the company's OpenAI API, including a help chatbot that also interacts with the dashboard.</li>
+            <li>Worked with the El Salvador team to build a centralized dashboard that brings all other dashboards together, coordinating tasks on shared boards.</li>
+            <li>Documented every dashboard and set up the databases each solution required.</li>
+          </ul>
+        </li>
+      </ol>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; 2026 Joshua Solares. All rights reserved.</p>
+      <div class="footer__socials">
+        <a href="contact.html">LinkedIn</a>
+        <a href="contact.html">CompuTrabajo</a>
+        <a href="projects.html">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

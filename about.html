@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me | Developer Portfolio</title>
+  <meta name="description" content="Profile and background of the developer." />
+  <link rel="alternate" hreflang="en" href="https://joshuasolares.me/about.html" />
+  <link rel="alternate" hreflang="es" href="https://joshuasolares.me/es/sobre-mi.html" />
+  <link rel="alternate" hreflang="x-default" href="https://joshuasolares.me/about.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script>
+    (function () {
+      var stored = localStorage.getItem("theme");
+      var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.setAttribute("data-theme", stored || (prefersDark ? "dark" : "light"));
+    })();
+  </script>
+</head>
+<body>
+
+  <div class="grain"></div>
+
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a href="index.html" class="topbar__brand">Joshua Solares<span>.</span></a>
+      <div class="topbar__nav">
+        <nav>
+          <ul class="topbar__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" aria-current="page">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <svg class="lang-switch__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z" /></svg>
+          <a href="about.html" lang="en" hreflang="en" aria-label="English" aria-current="true">EN</a>
+          <a href="es/sobre-mi.html" lang="es" hreflang="es" aria-label="Español">ES</a>
+        </div>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme">
+          <span class="icon-sun">☀</span>
+          <span class="icon-moon">☾</span>
+        </button>
+        <button class="topbar__toggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <div class="page-header">
+        <span class="page-header__folio">— 01 —</span>
+        <h1 class="page-header__title">Fullstack Developer</h1>
+      </div>
+
+      <div class="about-grid">
+        <div>
+          <span class="about-grid__role">Fullstack developer</span>
+          <p>
+            I hold a technical high school diploma in Computer Science
+            (Perito en Informática) from Fundación Kinal and I'm currently
+            enrolled in its Fullstack Java Developer program. I've been
+            programming for three years and have built hands-on projects of
+            very different kinds: from a banking system to a geolocated alerts
+            app, and even an arcade video game.
+          </p>
+        </div>
+        <div>
+          <p><strong>Goals.</strong> Specialize as a fullstack developer, keep
+            growing in Java and the JavaScript/React ecosystem, gain real
+            professional experience as part of a development team, and use
+            technology to help solve problems that matter to society.</p>
+          <p><strong>Strengths.</strong> Backend development with Node.js, .NET
+            and Java; frontend with React; relational and non-relational
+            databases (MySQL, MongoDB); teamwork using agile methodologies.</p>
+        </div>
+      </div>
+
+      <hr class="rule" />
+
+      <div class="page-header">
+        <span class="page-header__folio">— 02 —</span>
+        <h2 class="page-header__title">At a glance</h2>
+      </div>
+
+      <dl class="spec-list">
+        <div class="spec-row">
+          <dt>Name</dt>
+          <dd>Joshua Solares</dd>
+        </div>
+        <div class="spec-row">
+          <dt>Age</dt>
+          <dd>18</dd>
+        </div>
+        <div class="spec-row">
+          <dt>Email</dt>
+          <dd>joshuavladimir000@gmail.com</dd>
+        </div>
+        <div class="spec-row">
+          <dt>Years programming</dt>
+          <dd>3 years</dd>
+        </div>
+        <div class="spec-row">
+          <dt>Education</dt>
+          <dd>Graduate — Computer Science Technician (Fundación Kinal)</dd>
+        </div>
+      </dl>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; 2026 Joshua Solares. All rights reserved.</p>
+      <div class="footer__socials">
+        <a href="contact.html">LinkedIn</a>
+        <a href="contact.html">CompuTrabajo</a>
+        <a href="projects.html">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

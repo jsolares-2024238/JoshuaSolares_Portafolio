@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home | Developer Portfolio</title>
-  <meta name="description" content="Developer portfolio — welcome." />
-  <link rel="alternate" hreflang="en" href="https://joshuasolares.me/" />
-  <link rel="alternate" hreflang="es" href="https://joshuasolares.me/es/" />
-  <link rel="alternate" hreflang="x-default" href="https://joshuasolares.me/" />
+  <title>Contact | Developer Portfolio</title>
+  <meta name="description" content="Contact links: LinkedIn and CompuTrabajo." />
+  <link rel="alternate" hreflang="en" href="https://joshuasolares.me/contact.html" />
+  <link rel="alternate" hreflang="es" href="https://joshuasolares.me/es/contacto.html" />
+  <link rel="alternate" hreflang="x-default" href="https://joshuasolares.me/contact.html" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -30,18 +30,18 @@
       <div class="topbar__nav">
         <nav>
           <ul class="topbar__links">
-            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="skills.html">Skills</a></li>
             <li><a href="resume.html">Resume</a></li>
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
           </ul>
         </nav>
         <div class="lang-switch" role="group" aria-label="Language">
           <svg class="lang-switch__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z" /></svg>
-          <a href="index.html" lang="en" hreflang="en" aria-label="English" aria-current="true">EN</a>
-          <a href="es/index.html" lang="es" hreflang="es" aria-label="Español">ES</a>
+          <a href="contact.html" lang="en" hreflang="en" aria-label="English" aria-current="true">EN</a>
+          <a href="es/contacto.html" lang="es" hreflang="es" aria-label="Español">ES</a>
         </div>
         <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme">
           <span class="icon-sun">☀</span>
@@ -57,23 +57,41 @@
   <main>
     <div class="container">
 
-      <section class="hero">
-        <div class="hero__grid">
-          <div>
-            <span class="hero__folio">— 00 —</span>
-            <h1 class="hero__name">Joshua Solares</h1>
-            <blockquote class="hero__phrase">"Building software one project at a time, with the goal of making technology work for people."</blockquote>
-            <div class="hero__actions">
-              <a href="projects.html" class="btn btn--primary">View projects</a>
-              <a href="contact.html" class="btn btn--ghost">Get in touch</a>
-              <a href="assets/cv/Joshua-Solares-CV-EN.pdf" class="btn btn--ghost" download>Download CV (PDF)</a>
-            </div>
-          </div>
-          <div class="hero__photo">
-            <img src="assets/img/joshua.png" alt="Photo of Joshua Solares" />
-          </div>
-        </div>
-      </section>
+      <div class="page-header">
+        <span class="page-header__folio">— 01 —</span>
+        <h1 class="page-header__title">Let's talk</h1>
+        <p class="page-header__subtitle">
+          You can find me on the following platforms, which companies commonly
+          use to discover new talent.
+        </p>
+      </div>
+
+      <ul class="index-list">
+        <li class="index-row">
+          <a href="https://www.linkedin.com/in/joshua-solares-a4a744363/" target="_blank" rel="noopener">LinkedIn</a>
+          <span class="index-row__desc">Professional profile, experience and industry connections.</span>
+        </li>
+        <li class="index-row">
+          <a href="https://www.computrabajo.com.gt/" target="_blank" rel="noopener">CompuTrabajo</a>
+          <span class="index-row__desc">Resume and job applications.</span>
+        </li>
+        <li class="index-row">
+          <a href="https://github.com/JoshuaSolares" target="_blank" rel="noopener">GitHub</a>
+          <span class="index-row__desc">Repositories and source code for my projects.</span>
+        </li>
+        <li class="index-row">
+          <a href="https://github.com/jsolares-2024238" target="_blank" rel="noopener">GitHub (Kinal)</a>
+          <span class="index-row__desc">GitHub account used for school projects.</span>
+        </li>
+        <li class="index-row">
+          <a href="assets/cv/Joshua-Solares-CV-EN.pdf" download>CV (PDF)</a>
+          <span class="index-row__desc">Download my resume in PDF format.</span>
+        </li>
+        <li class="index-row">
+          <a href="mailto:joshuavladimir000@gmail.com">Email</a>
+          <span class="index-row__desc">For proposals, questions or direct contact.</span>
+        </li>
+      </ul>
 
     </div>
   </main>

@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home | Developer Portfolio</title>
-  <meta name="description" content="Developer portfolio — welcome." />
+  <title>Inicio | Portafolio de Desarrollador</title>
+  <meta name="description" content="Portafolio de desarrollador — bienvenida." />
   <link rel="alternate" hreflang="en" href="https://joshuasolares.me/" />
   <link rel="alternate" hreflang="es" href="https://joshuasolares.me/es/" />
   <link rel="alternate" hreflang="x-default" href="https://joshuasolares.me/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
   <script>
     (function () {
       var stored = localStorage.getItem("theme");
@@ -30,24 +30,24 @@
       <div class="topbar__nav">
         <nav>
           <ul class="topbar__links">
-            <li><a href="index.html" aria-current="page">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html" aria-current="page">Inicio</a></li>
+            <li><a href="sobre-mi.html">Sobre mí</a></li>
+            <li><a href="habilidades.html">Habilidades</a></li>
+            <li><a href="curriculum.html">Currículum</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
           </ul>
         </nav>
-        <div class="lang-switch" role="group" aria-label="Language">
+        <div class="lang-switch" role="group" aria-label="Idioma">
           <svg class="lang-switch__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z" /></svg>
-          <a href="index.html" lang="en" hreflang="en" aria-label="English" aria-current="true">EN</a>
-          <a href="es/index.html" lang="es" hreflang="es" aria-label="Español">ES</a>
+          <a href="../index.html" lang="en" hreflang="en" aria-label="English">EN</a>
+          <a href="index.html" lang="es" hreflang="es" aria-label="Español" aria-current="true">ES</a>
         </div>
-        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar tema">
           <span class="icon-sun">☀</span>
           <span class="icon-moon">☾</span>
         </button>
-        <button class="topbar__toggle" aria-label="Open menu">
+        <button class="topbar__toggle" aria-label="Abrir menú">
           <span></span><span></span><span></span>
         </button>
       </div>
@@ -56,40 +56,38 @@
 
   <main>
     <div class="container">
-
       <section class="hero">
         <div class="hero__grid">
           <div>
             <span class="hero__folio">— 00 —</span>
             <h1 class="hero__name">Joshua Solares</h1>
-            <blockquote class="hero__phrase">"Building software one project at a time, with the goal of making technology work for people."</blockquote>
+            <blockquote class="hero__phrase">"Construyendo software, un proyecto a la vez, con la meta de que la tecnología sirva a la gente."</blockquote>
             <div class="hero__actions">
-              <a href="projects.html" class="btn btn--primary">View projects</a>
-              <a href="contact.html" class="btn btn--ghost">Get in touch</a>
-              <a href="assets/cv/Joshua-Solares-CV-EN.pdf" class="btn btn--ghost" download>Download CV (PDF)</a>
+              <a href="proyectos.html" class="btn btn--primary">Ver proyectos</a>
+              <a href="contacto.html" class="btn btn--ghost">Contáctame</a>
+              <a href="../assets/cv/Joshua-Solares-CV-ES.pdf" class="btn btn--ghost" download>Descargar CV (PDF)</a>
             </div>
           </div>
           <div class="hero__photo">
-            <img src="assets/img/joshua.png" alt="Photo of Joshua Solares" />
+            <img src="../assets/img/joshua.png" alt="Foto de Joshua Solares" />
           </div>
         </div>
       </section>
-
     </div>
   </main>
 
   <footer class="footer">
     <div class="container footer__inner">
-      <p>&copy; 2026 Joshua Solares. All rights reserved.</p>
+      <p>&copy; 2026 Joshua Solares. Todos los derechos reservados.</p>
       <div class="footer__socials">
-        <a href="contact.html">LinkedIn</a>
-        <a href="contact.html">CompuTrabajo</a>
-        <a href="projects.html">GitHub</a>
+        <a href="contacto.html">LinkedIn</a>
+        <a href="contacto.html">CompuTrabajo</a>
+        <a href="proyectos.html">GitHub</a>
       </div>
     </div>
   </footer>
 
-  <script src="assets/js/theme.js"></script>
-  <script src="assets/js/script.js"></script>
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/script.js"></script>
 </body>
 </html>
